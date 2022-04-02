@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+</head>
+
+<body>
+  <div class="start-btn">
+      <button>start</button>
+      </div>
+   <div class="info-box">
+        <div class="info-title">
+             <span>
+                      some rules of the game 
+                </span>
+
+                  </div>
+      <div class="info-list">
+          <div class="info">1. You have only <span>15 seconds</span> per question</div>
+          <div class="info">2. No changing of answer</div>
+          <div class="info">3. You can't select any option once time goes off.</div>
+          <div class="info">4. You can't exit from the quiz while you're playing.</div>
+          <div class="info">5. You will get points on the basis of your answers.</div>
+   
+       <div class="buttons">
+         <button class="quit">Exit</button>
+         <button class="restart">Continue</button>
+         </div>
+
+      </div>
+</div>
+
+    <div class="quiz-box">
+       <header>
+            <div class="title"><h2> Awesome project</h2>  </div>
+           <div class="timer">
+          
+                <div class="time-text">time left</div>
+                 <div class="timer-sec">15</div>
+        
+           </div>
+           <div class="time-line"></div>
+
+           </header>
+     <section>
+
+       <div class="que-text"> what does html srands for ?</div>
+         <div class="option-list">
+
+           <!-- <div class="option">
+             <span>hyper text reprocessor</span>
+             <div class="icon tick"><i class="fas fa-check"> </i></div>
+             </div>
+
+            <div class="option">
+             <span>Hyper text markup language</span>
+             <div class="icon cross"><i class="fas fa-times"> </i></div>
+             </div/*
+             <div class="option">
+            <span>Hypertext multiple language</span>
+             </div/*
+              <div class="option">
+             <span> hypertool multi language</span>
+             </div>
+-->
+     </div>
+</section>
+
+<footer>
+     <div class="total-que">
+       <span><p>2</p>of<p>5</p>Questions</span>
+     </div>
+
+       <button class="next-btn"
+       data-aos="zoom-in-right"
+       >Next</button>
+
+</footer>
+
+ </div>
+ <div class="result">
+ 
+   <div class="icon"><i class="fas fa-crown"></i></div>
+ 
+ <div class="complete-text"> You've completed the test</div>
+ <div class="score">
+  <!--  <span>and sorry you got only <p> 2 </p> out of <p> 5</p></span> -->  
+</div>
+
+<div class="buttons">
+   <button class="restart" data-aos="zoom-in-left">replay</button>
+   <button class="quit" data-aos="zoom-in-right">quit</button>
+    </div>
+</div>
+
+<div class="footer">
+<footer>
+  Designed with 💖 by ABK
+</footer>
+</div>
+<script src="quiz.js"></script>
+<script src="questions.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
