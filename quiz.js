@@ -25,7 +25,7 @@ quitBtn.addEventListener('click', ()=>{
        quizBox.classList.add("activeQuiz");  // show the quizbox
        showQuestions(0);
        queCounter(1);
-       startTimer(15);
+       startTimer(10);
        startTimerLine(0);
        timeText.textContent = "Time left";
     });
@@ -34,7 +34,7 @@ quitBtn.addEventListener('click', ()=>{
 let queCount = 0;
 let queNumb = 1;
 let counter ;
-let timeValue = 15;
+let timeValue = 10;
 let widthValue = 0;
 let userScore =0; 
 let counterLine ;
@@ -57,7 +57,7 @@ restartQuiz.onclick =()=>{
     quizBox.classList.add("activeQuiz");
     let queCount = 0;
     let queNumb = 1;
-    let timeValue = 15;
+    let timeValue = 10;
     let widthValue = 0;
     showQuestions(queCount);
     queCounter(queNumb);
@@ -219,7 +219,7 @@ function startTimer(time){
 
 // Function for the moving line under the header
 function startTimerLine(time){
-    counterLine = setInterval(timer, 29);
+    counterLine = setInterval(timer, 26);
     function timer(){
     time += 1; 
     timeLine.style.width = time + "px";
