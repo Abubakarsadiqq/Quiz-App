@@ -341,7 +341,8 @@ transform: translate(-50%, -50%)  scale(0.9)   ;
 .result .icon{
     font-size: 100px;
     color: #007bff;
-    margin-bottom: 10px;
+    margin-bottom: 90px;
+    margin-right: 50px;
 
 }
 
