@@ -324,7 +324,7 @@ transition: all 0.3s ease;
 .result{
 background-color: white;
 width: 450px;
-height: 200px;
+height: auto;
 padding: 25px 30px;
 border-radius:5px;
 display: flex;
