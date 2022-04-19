@@ -1,7 +1,7 @@
 const startBtn = document.querySelector(".start-btn ");
 const infoBox = document.querySelector(".info-box");
 const quitBtn = infoBox.querySelector(".buttons .quit");
-const continueBtn = infoBox.querySelector(".buttons .restart");
+const continueBtn = infoBox.querySelector(".buttons .continue");
 const quizBox = document.querySelector(".quiz-box");
 const optionList = document.querySelector(".option-list");
 const timeCount = quizBox.querySelector(".timer-sec");
@@ -66,7 +66,7 @@ restartQuiz.onclick =()=>{
     clearInterval(counterLine);
    startTimerLine(widthValue);
    nextBtn.style.display ="none";
-
+   timeText.textContent = "time left";
 };
 
 //when next button is clicked
@@ -135,7 +135,7 @@ function optionSelected(answer){
         for(let i = 0; i < allOption; i++){
             if(optionList.children[i].textContent == correctAns){
               optionList.children[i].setAttribute("class", "option correct");
-               optionList.children[i].insertAdjacentHTML("beforeend", tickIcon);
+              // optionList.children[i].insertAdjacentHTML("beforeend", tickIcon);
                    } 
           
                 }
@@ -170,7 +170,7 @@ function showResultBox(){
     }
 
     if(userScore < 1 ){
-       let scoreTag = '<span>and pele , you got only <p>'+ userScore +'</p> out of <p>'+questions.length+'</p></span>';
+       let scoreTag = '<span>and sorry , you got only <p>'+ userScore +'</p> out of <p>'+questions.length+'</p></span>';
        scoreText.innerHTML= scoreTag;
     
     }

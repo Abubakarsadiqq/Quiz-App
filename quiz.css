@@ -113,7 +113,7 @@ outline: none;
 border-radius: 8px;
 user-select:none;
 }
-button.restart{
+button.continue , .restart{
     background: #007bff;
     color:#fff;  
     }
@@ -393,7 +393,7 @@ transition: all 0.3s ease;
 
 /* setting media queries for different devices*/
 
-@media(max-width:500px){
+@media(max-width:480px){
     .start-btn button{
         font-size: 20px;
     }
